@@ -1,0 +1,16 @@
+[Unit]
+Description=HTTPS SNI Proxy
+After=network.target remote-fs.target syslog.target
+Requires=network.target
+
+[Service]
+Type=forking
+PIDFile=/var/run/sniproxy.pid
+ExecStart=/usr/sbin/sniproxy
+ExecStop=/bin/kill $MAINPID
+ExecReload=/bin/kill -HUP $MAINPID
+Restart=on-failure
+EnvironmentFile=-/etc/default/sniproxy
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,15 @@
+[Unit]
+Description=sniproxy - a proxy server for HTTPS connections
+After=network.target local-fs.target
+Requires=network.target local-fs.target
+
+[Service]
+Type=forking
+PIDFile=/var/tmp/sniproxy.pid
+ExecStart=/usr/sbin/sniproxy -c /etc/sniproxy.conf
+ExecReload=/bin/kill -HUP $MAINPID
+ExecStop=/bin/kill $MAINPID
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
