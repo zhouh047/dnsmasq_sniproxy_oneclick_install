@@ -21,7 +21,7 @@ netflixdnstest7.com
 netflixdnstest8.com
 netflixdnstest9.com
 netflixdnstest10.com
-*.amazonaws.com
+amazonaws.com
 netflix.com.edgesuite.net
 abc-studios.com
 abc.com
@@ -44,7 +44,7 @@ hotstar-cdn.net
 hotstar-labs.com
 hotstarext.com
 hsprepack.akamaized.net
-*.akamaized.net
+akamaized.net
 marvel.com
 marvel10thanniversary.com
 marveldimensionofheroes.com
@@ -195,7 +195,7 @@ full:openaiapi-site.azureedge.net
 full:openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
 full:openaicomproductionae4b.blob.core.windows.net
 full:production-openaicom-storage.azureedge.net
-*.webpubsub.azure.com
+webpubsub.azure.com
 o33249.ingest.sentry.io
 openaicom.imgix.net
 gamer.com.tw
